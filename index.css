@@ -1,0 +1,228 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+#heroCont{
+    background: url(https://s.imgur.com/desktop-assets/desktop-assets/homebg.e52b5cdf24f83bcd55f9f1318855f2ef.png) no-repeat;
+    background-size: cover;
+    position : sticky;
+    top: -440px;
+    z-index: 10;
+}
+.heroCont__wrapper{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.navbar{
+    position : sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar__wrapper{
+    padding:0.9rem 2rem;
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav__div{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    padding-right: 1rem;
+}
+.inpCont{
+    width:600px;
+    height: 40px;
+    border-radius: 3px;
+    display:flex;
+    justify-content:space-between;
+    background-color: #eae7f521;
+}
+.inpCont>input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width:100%;
+    padding-left: 1rem;
+    color: #fff;
+    font-size: 1.1rem;
+}
+.inpCont>img{
+    width: 26px;
+    height:24px;
+    margin-top: 7px;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.inpCont>input::placeholder{
+    font-size: 1.1rem;
+    color:rgba(225, 235, 241, 0.582);
+}
+.btn{
+    padding:0 0.6rem;
+    border-radius: 3px;
+    font-size:1rem;
+    font-weight: 600;
+    color: #fff;
+    line-height: 2.5rem;
+}
+.btn>p{
+    padding: 0;
+}
+.btn__post{
+    background-color: #1bb76e;
+}
+.btn__ad{
+    background-color: #6432f9; 
+    margin-right: 0.5rem;
+}
+.svg{
+    display: block;
+    padding: 0.2rem 0.7rem;
+}
+#user__div{
+    display: flex;
+}
+#name{
+    font-size:1rem;
+    font-weight: 600;
+    color: #fff;
+    line-height: 2.5rem;
+    margin-right: 0.5rem;
+    padding: auto 0.5rem;
+}
+#profile{
+    border-radius: 50%;
+    width:2.5rem;
+    height:2.5rem;
+    border: 2px solid rgb(255, 255, 255);
+    overflow: hidden;
+}
+#profile>img{
+    width: 100%;
+    object-fit: cover;
+}
+.navHeading{
+    text-align: center;
+    color:rgb(233, 243, 255);
+    font-size:0.8rem;
+    margin-top: 2rem;
+}
+.tags{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 5rem;
+    margin-bottom: 1.5rem;
+}
+.tag{
+    display: flex;
+    justify-content: space-between;
+}
+.tagName{
+    color: rgba(247, 250, 255, 0.822);
+    font-size: 1.1rem;
+    font-weight:600;
+    margin: 1rem 0;
+}
+.tagName:first-child{
+    padding-left: 1.8rem;
+}
+.tagName:last-child{
+    padding-right: 2rem;
+}
+
+.tagCards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.tagCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 3px;
+    overflow: hidden;
+    width:120px;
+    height:140px;
+    transition: ease-in-out 0.3s;
+}
+.tagCard:hover{
+    transform: translateY(-3px);
+}
+.tagCard>img{
+    height: 80px;
+    object-fit: cover;
+}
+.cardDetail{
+    background-color: rgb(255, 81, 58);
+    color: #fff;
+    text-align: center;
+    padding:0.8rem 0;
+}
+.cardDetail>h2{
+    font-size: 1rem;
+}
+.cardDetail>h3{
+    font-size: 0.7rem;
+    color: rgba(240, 229, 229, 0.781);
+}
+.filter{
+    padding: 0 11rem 4rem;
+}
+.gallary{
+    width: 1100px;
+    background-color:rgb(228, 144, 144);
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgCard {
+  width: 100%;
+  margin: 16px;
+  background-color: rgba(71, 74, 81, 0.658);
+  border-radius: 5px;
+  box-shadow: 2px 3px 4px 0 rgb(0 0 0 / 40%);
+  transition: box-shadow 0.25s;
+  -webkit-transition: box-shadow 0.25s;
+}
+.imgCard:hover {
+  background-color: rgba(103, 104, 111, 0.788);
+}
+.desc {
+  padding: 15px;
+}
+.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: rgb(141, 146, 154);
+  padding: 10px 15px;
+}
+.ima {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+#gallary {
+  padding: 0 11rem;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(46, 48, 53);
+}
+#one,
+#two,
+#three,
+#four,
+#five {
+  flex: 1;
+  padding: 10px;
+  height: auto;
+  color:rgb(250, 249, 249);
+  font-size:0.7rem;
+  z-index: 5;
+}
